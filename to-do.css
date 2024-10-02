@@ -1,0 +1,165 @@
+
+:root {
+
+    --white: #f7f7f7;
+    --black: #1a1a1a;
+    --color1: #122129;
+    --color2: #1c709e;
+    --color3: #27c2c2;
+    --color4: #8ce0e6;
+    --color5: #dde985;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    scroll-behavior: smooth;
+    font-family: kanit;
+}
+
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    place-items: center center;
+    background: linear-gradient(90deg, var(--color2) , var(--color3));
+}
+
+
+/* /////////////////////////////////// NAV /////////////////////////////////// */
+
+.nav {
+
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+
+    background-color: var(--color1);
+    border-bottom: 1px solid var(--black);
+}
+
+.nav_caja_botones {
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.boton_nav {    text-decoration: none;  padding: 21px 10px; }
+
+.boton_nav:link, .boton_nav:visited  {  color: var(--white);  }
+
+.boton_nav:hover {  background-color: var(--color2); }
+
+
+
+
+/* /////////////////////////////////// APP /////////////////////////////////// */
+
+.caja_app {
+
+    width: 40%;
+    margin: 4rem 0;
+
+    box-sizing: border-box;
+    background-color: var(--color4);
+
+    padding-bottom: 1rem;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center center;
+}   
+
+
+#titulo_cabezal {
+
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+
+    padding: 1rem;
+
+    background-color: var(--color1);
+    color: var(--white);
+
+    width: 100%;
+    text-align: center;
+}
+
+
+/* ///////////// BOTONES ///////////// */
+
+.caja_input {
+
+    border-bottom: 1px solid var(--color1);
+    width: 100%;
+    padding: 1rem;
+}
+
+.caja_input label { font-weight: 600; }
+
+
+#input_tareas {
+
+    border: 2px solid var(--color1);
+    width: 45%;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+
+#boton_tareas {
+
+    width: 15%;
+    padding: 5px 10px;
+    border: 2px solid var(--color1);
+}
+
+#boton_tareas:hover {  cursor: pointer;    background-color: var(--color3);   }
+
+
+#caja_lista {
+
+    width: 100%;
+}
+
+#caja_lista li {                /* #caja_lista li podria ser una clase y podria añadirsela en la funcion */
+
+    width: 100%;
+    padding: 1rem;
+
+    list-style: none;
+
+    border-bottom: 1px solid var(--color1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#caja_lista li > p {
+
+    padding: 5px;
+}
+
+#caja_lista li > button {
+
+    border: 2px solid var(--color1);
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+#caja_lista li > button:hover {  cursor: pointer;   background-color: var(--color3);   }
+
