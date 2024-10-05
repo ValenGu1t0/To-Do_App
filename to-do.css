@@ -163,3 +163,48 @@ body {
 
 #caja_lista li > button:hover {  cursor: pointer;   background-color: var(--color3);   }
 
+
+/* ////////////////////////////////////////////////////////////////////// MEDIA QUERYS //////////////////////////////// */
+
+
+/* ///////////////////// DESKTOP ///////////////////// */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .caja_app { width: 70%; }
+    .caja_input { flex-direction: column; flex-wrap: nowrap; }
+}
+
+/* ///////////////////// NOTEBOOK  ///////////////////// */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+
+    .caja_app { width: 60%; }
+    .caja_input { flex-direction: column; }
+    
+}
+
+/* ///////////////////// TABLET  ///////////////////// */
+@media only screen and (min-width: 576px ) and (max-width: 768px) {
+
+    .caja_app { width: 80%; }
+    .caja_input { flex-direction: column; flex-wrap: nowrap; }
+ 
+}
+
+/* ///////////////////// CELULAR GRANDE ///////////////////// */
+@media only screen and (min-width: 413px ) and (max-width: 575px) {
+
+    .caja_app { width: 80%; }
+    .caja_input { justify-content: space-between; }
+    #input_tareas  { width: 60%;  }  
+    
+}
+
+/* ///////////////////// CELULAR ///////////////////// */
+@media only screen and (max-width: 413px ) {
+
+    .caja_app { width: 70%; }
+    .caja_input { justify-content: space-between; }
+    #input_tareas  { width: 60%;  }  
+    
+}
+
